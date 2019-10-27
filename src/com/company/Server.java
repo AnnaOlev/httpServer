@@ -5,11 +5,14 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Server {
 
     private static int port = 8080;
     private ServerSocket serverSocket;
+    private List<Dog> dogs = new ArrayList<>();
 
     public static void main(String[] args) {
         try {
@@ -37,8 +40,9 @@ public class Server {
     private void start(){
         try {
             while (true) {
+
                 Socket socket = serverSocket.accept();
-                HttpWorker connection = new HttpWorker(socket);
+                HttpWorker connection = new HttpWorker(socket, dogs);
 
                 Thread thread = new Thread(connection);
                 thread.start();

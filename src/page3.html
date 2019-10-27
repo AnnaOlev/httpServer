@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Таблица собак</title>
+    <link href="styles.css" rel="stylesheet" type='text/css'>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div>
+    <img src="https://cs8.pikabu.ru/avatars/2325/x2325072-1928787198.png" width="100" height="100">
+    <a href="page1.html">О себе&nbsp;&nbsp;&nbsp;</a>
+    <a href="page2.html">Вычисление максимума&nbsp;&nbsp;&nbsp;</a>
+    <a href="page3.html">Таблица собак</a>
+    <br>
+    <hr>
+</div>
+<br>
+<table id="table">
+
+    <caption>Собаки</caption>
+    <tr>
+        <th>Кличка</th><th>Порода</th><th>Пол</th><th>Возраст</th>
+
+</table>
+<div id="zatemnenie" class = "zatemnenie">
+    <div id="okno" class="okno">
+        Новая собака<br>
+        <p><label for="name">Кличка собаки </label><input type="text" id="name" oninput="checkInputText(this)" ></p>
+        <p><label for="breed">Порода собаки </label><input type="text" id="breed" oninput="checkInputText(this)"></p>
+        <p><label for="sex">Пол собаки </label><input type="text" id="sex" oninput="checkInputSex(this,1)"></p>
+        <p><label for="age">Возрат собаки </label><input type="text" id="age" onInput="checkLength(5,this)" onKeyPress ="if ((event.keyCode < 48) || (event.keyCode > 57)){
+  event.returnValue = false; alert('Неверный ввод. Поддерживаются только цифры');}"></p>
+        <a href="#"  id="closebutton" class="close" onclick="addRow('table')">Сохранить</a>
+    </div>
+</div>
+<form action="#zatemnenie">
+    <button class="knopka" type="submit">Добавить запись</button>
+</form>
+
+<div id="zatemnenie_change" class = "zatemnenie">
+    <div id="okno_change" class="okno">
+        Редактируем собаку<br>
+        <p><label for="namenew">Кличка собаки </label><input type="text" id="namenew" oninput="checkInputText(this)" ></p>
+        <p><label for="breednew">Порода собаки </label><input type="text" id="breednew" oninput="checkInputText(this)"></p>
+        <p><label for="sexnew">Пол собаки </label><input type="text" id="sexnew" oninput="checkInputSex(this,1)"></p>
+        <p><label for="agenew">Возрат собаки </label><input type="text" id="agenew" onInput="checkLength(5,this)" onKeyPress ="if ((event.keyCode < 48) || (event.keyCode > 57)){
+  event.returnValue = false; alert('Неверный ввод. Поддерживаются только цифры');}"></p>
+        <a href="#"  id="closebuttonnew" class="close">Сохранить</a>
+    </div>
+</div>
+
+
+<script src="tablework.js"></script>
+</body>
+</html>

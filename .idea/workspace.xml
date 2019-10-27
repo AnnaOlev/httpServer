@@ -6,7 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d088b-e228-44f7-bfaf-1ad3fc918421" name="Default Changelist" comment="" />
+    <list default="true" id="c26d088b-e228-44f7-bfaf-1ad3fc918421" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/getresult.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tablework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/HttpWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/HttpWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HttpWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HttpWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Server.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,19 +32,34 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SA5KYzELCLejWkm4VCLtCQjWQC" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src" />
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\com\company" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -43,6 +74,18 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JarApplication" editBeforeRun="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$APPLICATION_HOME_DIR$/jbr" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="CSA-lab2:jar" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,5 +98,22 @@
       <updated>1570993496990</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

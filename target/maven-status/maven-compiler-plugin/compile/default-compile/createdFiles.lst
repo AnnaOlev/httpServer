@@ -1,0 +1,8 @@
+com\company\Server.class
+dao\DogDao.class
+com\company\HttpWorker.class
+com\company\MaxFinder.class
+services\DogService.class
+com\company\Result.class
+utils\HibernateSessionFactoryUtil.class
+models\Dog.class

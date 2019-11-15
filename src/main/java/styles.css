@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 20px;
+  color: #039;
+}
+
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+a {
+   text-decoration: none;
+   color: #039
+}
+
+div {
+    background-color: #EECFBA;
+	font-size: 25px;
+	position:relative;
+    align: justify;
+}
+th {
+  font-weight: normal;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 8px;
+}
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 9px 8px;
+  transition: .3s linear;
+}
+tr:hover td {color: #6699ff;}
+.zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      .okno {
+        font-size: 20px;
+        width: 400px;
+        height: 350px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+      }
+      .zatemnenie:target {display: block;}
+      .knopka {
+        display: inline-block;
+        border: 1px solid #ccc;
+        color: #039;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+

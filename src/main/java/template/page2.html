@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Максимум</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+<#include "header.html">
+    <b>${info}</b>
+    <br> Введите числа через запятую и нажмите на кнопку для получения результата
+<form id="forma" action="/count" method="POST" enctype="application/x-www-form-urlencoded">
+    <p><label for="numbers">Числа </label><input type="text" id="numbers" oninput="checkInputNumbers(this)"></p>
+    <p><input class="knopka" type="submit" value="Отправить"></p>
+    <p><label for="result">Максимум </label><input type="text" id="result"></p>
+</form>
+<br>
+<script charset="UTF-8" src="getresult.js"></script>
+</body>
+<!--Это страничка для лабораторной работы по дисциплине разработка клиент-серверных приложений
+Ее сделала Олевская Анна, студент группы ИКБО-16-17
+В пятой лабораторной мы изучаем FreeMaker
+Кодировки - сложная вещь, и русский язык здесь работает ну очень странно
+Этот комментарий находится здесь для общего развития, а также ради успеха в подгрузке разметки-->
+</html>

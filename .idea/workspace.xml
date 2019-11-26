@@ -7,56 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c26d088b-e228-44f7-bfaf-1ad3fc918421" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_8_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/template/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSA-lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CSA-lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CSA_lab2_jar/CSA-lab2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/HttpWorker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/MaxFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-lab2/com/company/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HttpWorker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MaxFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getresult.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tablework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/HttpWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/HttpWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template/page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template/page2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/template/page3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tablework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tablework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CSA-lab2-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CSA-lab2-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CSA-lab2-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CSA-lab2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/HttpWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/HttpWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Dog.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,22 +46,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src" />
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\com\company" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\main\java\template" />
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\main\java" />
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\main\java\web" />
+      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\main\resources" />
       <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src" />
-      <recent name="C:\Users\Анна\IdeaProjects\CSA-lab2\src\com\company" />
     </key>
   </component>
   <component name="RunDashboard">

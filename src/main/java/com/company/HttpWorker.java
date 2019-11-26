@@ -1,5 +1,9 @@
 package com.company;
 
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
+import freemarker.template.Version;
 import models.Dog;
 import services.DogService;
 import java.io.*;
@@ -7,8 +11,9 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,6 +22,7 @@ public class HttpWorker implements Runnable{
     private Socket socket;
     private List<Dog> dogs;
     private DogService dogService = new DogService();
+    private Configuration configuration = new Configuration(new Version("2.3.23"));
 
     HttpWorker(Socket socket, List<Dog> dogs) {
         this.socket = socket;
@@ -100,9 +106,11 @@ public class HttpWorker implements Runnable{
         }
     }
 
-    private void populateResponse(OutputStream outputStream, String data) throws IOException {
+    private void populateResponse(OutputStream outputStream, String data) throws IOException, TemplateException {
         Pattern pattern = Pattern.compile("([0-9]+,)+");
         Pattern pattern1 = Pattern.compile("[a-zA-Z]+");
+        configuration.setDirectoryForTemplateLoading(new File("C:/Users/Анна/IdeaProjects/CSA-lab2/src/main/java/template"));
+        configuration.setDefaultEncoding("UTF-8");
         Matcher matcher = pattern.matcher(data);
         Matcher matcher1 = pattern1.matcher(data);
         String base;
@@ -111,16 +119,33 @@ public class HttpWorker implements Runnable{
             MaxFinder maxFinder = new MaxFinder(data);
             base = maxFinder.getResult();
         }
-        else if (data.contains("page2"))
-            base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page2.html")));
-
+        else if (data.contains("page2")) {
+            HashMap render = new HashMap();
+            render.put("info", "Поиск максимального значения среди множества чисел");
+            Template template = configuration.getTemplate("page2.html");
+            StringWriter writer = new StringWriter();
+            template.process(render, writer);
+            base = writer.toString();
+            //base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page2.html")));
+        }
         else if (data.contains("getresult")) {
             base = new String((Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\getresult.js"))));
             content = "text/javascript";
         }
-        else if (data.contains("page3"))
-            base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page3.html")));
-
+        else if (data.contains("page3")) {
+            HashMap render = new HashMap();
+            Vector<Dog> dogs = new Vector<>();
+            Dog d1 = new Dog(1, "Мила", "Никакая", 'f', 6);
+            dogs.add(d1);
+            Dog d2 = new Dog(2, "Это", "Образцы", 'm', 1);
+            dogs.add(d2);
+            render.put("dogs", dogs);
+            Template template = configuration.getTemplate("page3.html");
+            StringWriter writer = new StringWriter();
+            template.process(render, writer);
+            base = writer.toString();
+            //base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page3.html")));
+        }
         else if (data.contains("styles")) {
             base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\styles.css")));
             content = "text/css";
@@ -145,8 +170,18 @@ public class HttpWorker implements Runnable{
             base = sb.toString();
             System.out.println(base);
         }
-        else
-            base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page1.html")));
+        else {
+            HashMap render = new HashMap();
+            render.put("studentName", "Олевская Анна Леонидовна");
+            render.put("studentGroup", "ИКБО-16-17");
+            Template template = configuration.getTemplate("page1.html");
+            StringWriter writer = new StringWriter();
+            template.process(render, writer);
+            base = writer.toString();
+            data = "page1";
+            //base = new String(Files.readAllBytes(Paths.get("C:\\Users\\Анна\\IdeaProjects\\CSA-lab2\\src\\main\\java\\page1.html")));
+        }
+
 
         String response = "HTTP/1.1 200 OK\r\n" +
                 "Server: YarServer/2019-10-27\r\n" +
@@ -154,14 +189,22 @@ public class HttpWorker implements Runnable{
                 "Content-Length: " + base.length() + "\r\n" +
                 "Connection: close\r\n\r\n";
         String result = response + base;
+
         if (data.contains("givemedog")) {
             outputStream.write(base.getBytes(StandardCharsets.UTF_8));
             outputStream.flush();
         }
+        else if (data.contains("page")){
+            outputStream.write(response.getBytes());
+            outputStream.flush();
+            outputStream.write(base.getBytes(StandardCharsets.UTF_8));
+        }
         else {
             outputStream.write(result.getBytes());
-            outputStream.close();
+            outputStream.flush();
         }
+        outputStream.close();
+
 
         socket.close();
     }

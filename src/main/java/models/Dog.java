@@ -25,6 +25,14 @@ public class Dog {
         return id;
     }
 
+    public Dog(int id, String name, String breed, char sex, int age) {
+        this.id = id;
+        this.name = name;
+        this.breed = breed;
+        this.sex = sex;
+        this.age = age;
+    }
+
     public Dog(String name, String breed, char sex, int age) {
         this.name = name;
         this.breed = breed;

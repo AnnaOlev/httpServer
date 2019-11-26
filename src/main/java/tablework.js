@@ -68,7 +68,7 @@ function preAddRow(id){
     xhr.onreadystatechange = function() {
          if(xhr.readyState == 4 && xhr.status == 200) {
               result = xhr.responseText
-              alert(result);
+              //alert(result);
               id_dog = result;
               addRow(id);
              }
